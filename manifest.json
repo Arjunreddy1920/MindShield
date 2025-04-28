@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "MindShield",
+    "version": "1.0.0",
+    "description": "Block Url from Browser for time frame",
+    "browser_action": {
+        "default_title": "MindShield",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    }
+}
